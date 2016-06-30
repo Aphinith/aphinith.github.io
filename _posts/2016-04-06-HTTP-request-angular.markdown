@@ -42,3 +42,5 @@ The third method is to include your authentication parameters and key directly i
 </div>
 
 The insertion of the authentication parameters and key comes after the '&' symbol in the above.  And there you have it folks - the three different ways to send HTTP requests with authentication keys.
+
+<div class="breaker"></div>
