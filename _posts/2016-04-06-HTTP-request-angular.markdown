@@ -23,7 +23,7 @@ So I chose angular as the framework of choice for my mvp project for this sprint
 The first method is to set your authentication key directly in the headers as part of your HTTP request:
 
 <div class="angular1-image">
-  <img class="image" src="../assets/images/angular1.png" alt="authentication key">
+  <img class="image" src="../assets/images/angular.png" alt="authentication key">
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
