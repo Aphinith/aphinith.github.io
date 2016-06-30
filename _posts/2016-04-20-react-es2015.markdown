@@ -1,0 +1,39 @@
+---
+title: "React with ES6"
+layout: post
+date: 2016-04-20 22:48
+image: /assets/images/react.png
+headerImage: false
+tag:
+- react
+- es2015
+- es6
+- react class
+blog: true
+author: aralyaphinith
+description: React with ES6 - quick intro to states
+---
+
+<div class="breaker"></div>
+
+## React with ES6 - quick intro to states
+
+So we are using React as our front end framework for our thesis project and will also be writing our app with ES2015 as well.  Both the framework and ES6 are still fairly new to me so I'm excited to delve more into this as we build our app.  For this blog post, I'll be going over a little about states and sub-class components.  I'll create a search bar using react as an example.  First, let's make the search bar with ES5 and then refactor to ES6.
+
+<div class="react1-image">
+  <img class="image" src="../assets/images/react1.png" alt="search bar es5">
+  <figcaption class="caption">Photo by Aralya Phinith</figcaption>
+</div>
+
+First we create our sub-class component called SearchBar, then extends Component to pass along reacts class component.  Then inside the component, we'll need a render function that returns an input tag.  This input tag will be our search bar and it will need an event handler called onChange to keep track of the changes as characters are typed into the search bar.  This component will also need a function to handle the onChange event.  We will call this function onInputChange and it will take the event as the parameter.  Now if you console.log event.target.value, as you type into the search bar, the console will log each character with every button you press.  The onChange event handler in the input tag inside the render function will call the onInputChange function each time a character is entered into the search bar.
+
+Now lets refactor our code to use states and ES6:
+
+<div class="react2-image">
+  <img class="image" src="../assets/images/react2.png" alt="search bar es6">
+  <figcaption class="caption">Photo by Aralya Phinith</figcaption>
+</div>
+
+So with sub-class components in react, you can set your states with constructor functions.  Here we called our constructor function with props as the parameter, and with ES6, you must also call super with props as the parameter as well (shown on line 6 above).  Next, we can set our initial state for this component by setting this.state to an object.  In this example, I've set this.state to an object with a property key called term with the value 'Enter Search Here'.  This means that the value inside the search bar will be set to 'Enter Search Here' upon loading this page.  Next, let's create the render function using ES6.  You'll notice that the render function is similar to the one we wrote earlier in that it will return something.  In this case, we'll return a div tag with our search bar in it.  This time around though, we'll set value to {this.state.term} and our syntax for our event handler will be different.  Instead of creating a function separately, we can use arrow functions all in one line with our event handler.  We can just set our onChange event handler to the arrow function that takes in the event as the parameter, and then we can update our state with "this.setState".  Here we have set our this.setState to our object property key called term (which had the initial value of 'Enter Search Here') and giving it the property event.target.value.  Now whenever anything is typed into the search bar, the value (or state) will be updated with whatever is typed in.  And there you have it, a quick intro that taps into a little bit of react states and ES6!
+
+<div class="breaker"></div>
