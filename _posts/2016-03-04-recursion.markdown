@@ -24,7 +24,7 @@ I have to admit, the first time recursion was introduced to me, I was very confu
 The below example was a good introduction to recursion for me.  A factorial function used to call itself recursively:
 
 <div class="factorial">
-  <img class="image" src="assets/images/factorial.png" alt="factorial function">
+  <img class="image" src="../assets/images/factorial.png" alt="factorial function">
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
