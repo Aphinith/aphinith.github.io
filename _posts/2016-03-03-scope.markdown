@@ -1,0 +1,33 @@
+---
+title: "Scope"
+layout: post
+date: 2016-03-03 22:48
+image: /assets/images/scopes.png
+headerImage: false
+tag:
+- markdown
+- components
+- extra
+blog: true
+author: aralyaphinith
+description: Factorial with recursion
+---
+
+<div class="breaker"></div>
+
+## First Impressions
+
+I found the basic concept of scopes to be fairly simple and straightforward.  An anology that always comes to mind whenever I think about scopes is a box shaped room.  You are in this box shaped room and this room has windows all around it.  You are able to look outside these windows, and you realize that the current room you are in, is inside of another box shaped room with windows.  You can also see through those windows.  Through those outer windows, you see that it is inside another box shaped room with windows, and you can even see through those windows to see the next level.  So basically, you can see whatever is around you in the current room you are in and also everything that is outside of your room... infinitely.  You suddenly turn inwards towards the center of your room, and you notice a rather large box with tinted windows.  The tint on the windows are as opaque as charcoal.  You hear a knocking coming from the box, but you cannot see what's inside!  You then realize that this box is just a smaller box shaped room, just like the one you are in!  You wonder what's inside, but because it is inside your room (versus looking out your windows), you cannot see what's in there!  You can only see what is around you in the current room and see through windows that show what is outside of your room.  That my friend, is scope.
+
+## Grandparents, parents, and children
+
+Below is another example of how scopes work.
+
+<div class="scope">
+  <img class="image" src="../assets/images/scopes.png" alt="scopes example">
+  <figcaption class="caption">Photo by Aralya Phinith</figcaption>
+</div>
+
+As you can see, you only have access to your immediate level and levels outside of your level, but you do not have access to the levels within your current level.
+
+<div class="breaker"></div>
