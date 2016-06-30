@@ -5,6 +5,8 @@ date: 2016-06-01 22:48
 image: /assets/images/react-router1.png
 headerImage: false
 tag:
+- user interface
+- user experience
 blog: true
 author: aralyaphinith
 description: navigation with react-router

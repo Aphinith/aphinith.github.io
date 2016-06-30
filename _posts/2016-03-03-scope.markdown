@@ -5,9 +5,8 @@ date: 2016-03-03 22:48
 image: /assets/images/scopes.png
 headerImage: false
 tag:
-- markdown
-- components
-- extra
+- scope
+- recursion
 blog: true
 author: aralyaphinith
 description: Factorial with recursion

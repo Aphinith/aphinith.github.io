@@ -5,9 +5,8 @@ date: 2016-03-04 22:48
 image: /assets/images/factorial.png
 headerImage: false
 tag:
-- markdown
-- components
-- extra
+- recursion
+- scope
 blog: true
 author: aralyaphinith
 description: Factorial with recursion
