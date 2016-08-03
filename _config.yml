@@ -34,7 +34,7 @@ facebook: aralya.phinith
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: aralya-phinith-99321ab2
+linkedin: aralya-phinith
 #youtube: myyoutube
 #spotify: myspotify
 github: aphinith
@@ -43,9 +43,9 @@ github: aphinith
 email: aphinith84@gmail.com
 
 authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+    aralyaphinith:
+        name: Aralya Phinith
+        bio: A Man who travels the world looking for the perfect wave
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
@@ -66,7 +66,7 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+# projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: false
