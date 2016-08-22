@@ -56,7 +56,7 @@ So the start script is optional, but if you do not have one in your package.json
 Once you have these two files setup, simply navigate to the root directory of your app and type in the terminal:
 
 {% highlight raw %}
-heroku create <name of your app>
+heroku create --name of your app--
 {% endhighlight raw %}
 
 This will create a remote to heroku's repository.  To check to see if the remote was successfully added, simply type in the command line:
