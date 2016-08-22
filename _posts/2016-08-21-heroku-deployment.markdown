@@ -16,7 +16,9 @@ description: deployment with Heroku
 
 ## Deployment with Heroku
 
-Have a node.js (javascript) app that needs deployment?  Well Heroku is here to do just that for you, but before we get started, you will need to create a Heroku account and then download and install the Heroku toolbelt which will give you access to the Heroku CLI.
+Have a node.js (javascript) app that needs deployment?  Well Heroku is here to do just that for you, but before we get started, you will need to [create a Heroku account](https://www.heroku.com/) and then download and install the [Heroku toolbelt](https://toolbelt.heroku.com/) which will give you access to the Heroku CLI.
+
+Once you have installed the toolbelt, open your terminal and type in ####heroku.  Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal ####heroku login and enter your credentials.
 
 <div class="react-router">
   <img class="image" src="../assets/images/react-router1.png" alt="npm install react router">
