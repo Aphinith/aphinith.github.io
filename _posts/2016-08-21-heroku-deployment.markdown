@@ -18,7 +18,7 @@ description: deployment with Heroku
 
 Have a node.js (javascript) app that needs deployment?  Well Heroku is here to do just that for you, but before we get started, you will need to [create a Heroku account](https://www.heroku.com/) and then download and install the [Heroku toolbelt](https://toolbelt.heroku.com/) which will give you access to the Heroku CLI.
 
-Once you have installed the toolbelt, open your terminal and type in **heroku**.  Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal **heroku** login and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
+Once you have installed the toolbelt, open your terminal and type in **heroku**.  Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal **heroku login** and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
 
 Let's first configure your server file, which is usually named index.js or server.js.  The only thing that you need to have here is to set your port to **process.env.PORT**. 
 
@@ -27,10 +27,10 @@ Let's first configure your server file, which is usually named index.js or serve
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
-Let's look at the **package.json** file.  You will need to explicitly add
+Let's look at the **package.json** file.  You will need to explicitly declare your engines here and the version of the engine.  You'll also notice below that there is a start script included in this package.json file.  If you have a start script, you will not need to create a **Procfile**, but if you do not have a start script, then you will need to create one (which I will go over next).
 
-<div class="react-router">
-  <img class="image" src="../assets/images/react-router2.png" alt="import react-router">
+<div class="package.json_file">
+  <img class="image" src="../assets/images/heroku3.png" alt="package.json file">
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
