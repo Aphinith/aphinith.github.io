@@ -20,15 +20,15 @@ Have a node.js (javascript) app that needs deployment?  Well Heroku is here to d
 
 Once you have installed the toolbelt, open your terminal and type in 
 
-{% highlight %}
+
 heroku
-{% endhighlight %}
+
 
 Dependencies for the toolbelt will begin to install.  Once that is complete, next type in your terminal
 
-{% highlight html %}
+
 heroku login
-{% endhighlight %}
+
 
 and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
 
@@ -55,32 +55,32 @@ So the start script is optional, but if you do not have one in your package.json
 
 Once you have these two files setup, simply navigate to the root directory of your app and type in the terminal:
 
-{% highlight raw %}
+
 heroku create --name of your app--
-{% endhighlight raw %}
+
 
 This will create a remote to heroku's repository.  To check to see if the remote was successfully added, simply type in the command line:
 
-{% highlight html %}
+
 git remote -v
-{% endhighlight %}
+
 
 You should see **heroku master** as one of your remotes listed.  If the remote was successfully added, on the command line, enter: 
 
-{% highlight html %}
+
 git push heroku master
-{% endhighlight %}
+
 
 This will start the build onto heroku's repository.  Once the build is complete, simply enter on the command line:
 
-{% highlight html %}
+
 heroku open
-{% endhighlight %}
+
 
 And voila, your app is now deployed.  In the case that you ran into an error and it wasn't deployed successfully, go back to your terminal and enter:
 
-{% highlight html %}
+
 heroku logs
-{% endhighlight %}
+
 
 This will give you the log of any and all errors that were encountered during your deployment.  This is where the true fun begins -- debugging!  I hope this was helpful and have fun out there folks!!!
