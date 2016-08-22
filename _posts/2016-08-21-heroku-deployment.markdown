@@ -18,14 +18,16 @@ description: deployment with Heroku
 
 Have a node.js (javascript) app that needs deployment?  Well Heroku is here to do just that for you, but before we get started, you will need to [create a Heroku account](https://www.heroku.com/) and then download and install the [Heroku toolbelt](https://toolbelt.heroku.com/) which will give you access to the Heroku CLI.
 
-Once you have installed the toolbelt, open your terminal and type in ####heroku.  Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal ####heroku login and enter your credentials.
+Once you have installed the toolbelt, open your terminal and type in **heroku**.  Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal **heroku** login and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
 
-<div class="react-router">
-  <img class="image" src="../assets/images/react-router1.png" alt="npm install react router">
+Let's first configure your server file, which is usually named index.js or server.js.  The only thing that you need to have here is to set your port to **process.env.PORT**. 
+
+<div class="environment_port">
+  <img class="image" src="../assets/images/heroku2.png" alt="process.env.PORT">
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
-Then with a module bundler like webpack that supports either CommonJS or ES2015 modules, use as you would anything else:
+Let's look at the **package.json** file.  You will need to explicitly add
 
 <div class="react-router">
   <img class="image" src="../assets/images/react-router2.png" alt="import react-router">
