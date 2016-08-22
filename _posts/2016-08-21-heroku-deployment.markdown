@@ -27,7 +27,7 @@ heroku
 Dependencies for the toolbelt will begin to install.  Once that is complete, next type in your terminal
 
 
-heroku login
+**heroku login**
 
 
 and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
