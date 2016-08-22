@@ -18,7 +18,15 @@ description: deployment with Heroku
 
 Have a node.js (javascript) app that needs deployment?  Well Heroku is here to do just that for you, but before we get started, you will need to [create a Heroku account](https://www.heroku.com/) and then download and install the [Heroku toolbelt](https://toolbelt.heroku.com/) which will give you access to the Heroku CLI.
 
-Once you have installed the toolbelt, open your terminal and type in **heroku**.  Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal **heroku login** and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
+Once you have installed the toolbelt, open your terminal and type in 
+{% highlight %}
+**heroku**  
+{% endhighlight %}
+Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal
+{% highlight html %}
+**heroku login** 
+{% endhighlight %}
+and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
 
 Let's first configure your server file, which is usually named index.js or server.js.  The only thing that you need to have here is to set your port to **process.env.PORT**. 
 
@@ -27,21 +35,29 @@ Let's first configure your server file, which is usually named index.js or serve
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
-Let's look at the **package.json** file.  You will need to explicitly declare your engines here and the version of the engine.  You'll also notice below that there is a start script included in this package.json file.  If you have a start script, you will not need to create a **Procfile**, but if you do not have a start script, then you will need to create one (which I will go over next).
+Let's look at the **package.json** file.  You will need to explicitly declare your engines here and the version of node you are using.  If you are unsure of what version of node you have, simply type in **node -v** in your terminal.  You'll also notice below that there is a start script included in this package.json file.  If you have a start script, you will not need to create a **Procfile**, but if you do not have a start script, then you will need to create a Procfile (which I will go over next).
 
 <div class="package.json_file">
   <img class="image" src="../assets/images/heroku3.png" alt="package.json file">
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
-Once that is set up, then you can create your parent components as the main components to be viewed/rendered when navigating to those routes.  For this example, I have created a home page, a registration, and a profile page component.  Within each component, you can insert as many children component as you wish:
+So the start script is optional, but if you do not have one in your package.json file you will need a **Procfile** in your root directory.  It must be named exactly that and in your file, you simply need the following: **web: node server.js**
 
-<div class="react-router">
-  <img class="image" src="../assets/images/react-router3.png" alt="parent component">
+<div class="procfile">
+  <img class="image" src="../assets/images/heroku4.png" alt="Procfile">
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
-Once those components are setup, we can create the navigation component below.  You'll notice that we use Link instead of the the href that we all are used to seing.  Also be sure to include {this.props.children} as indicated in line 59 below.  The children components within the parent component will not render without this line of code.
+Once you have these two files setup, simply navigate to the root directory of your app and type in the terminal:
+{% highlight raw %}
+heroku create <name of your app>
+{% endhighlight raw %}
+
+This will create a remote to heroku's repository.  To check to see if the remote was successfully added, simply type in the command line:
+{% highlight html %}
+git remote -v
+{% endhighlight %}
 
 <div class="react-router">
   <img class="image" src="../assets/images/react-router4.png" alt="nav bar">
