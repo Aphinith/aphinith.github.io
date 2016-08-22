@@ -19,13 +19,17 @@ description: deployment with Heroku
 Have a node.js (javascript) app that needs deployment?  Well Heroku is here to do just that for you, but before we get started, you will need to [create a Heroku account](https://www.heroku.com/) and then download and install the [Heroku toolbelt](https://toolbelt.heroku.com/) which will give you access to the Heroku CLI.
 
 Once you have installed the toolbelt, open your terminal and type in 
+
 {% highlight %}
-**heroku**  
+heroku
 {% endhighlight %}
-Dependencies for the toolbelt will begin to install.  Once that is complete, type in your terminal
+
+Dependencies for the toolbelt will begin to install.  Once that is complete, next type in your terminal
+
 {% highlight html %}
-**heroku login** 
+heroku login
 {% endhighlight %}
+
 and enter your credentials.  Your CLI should be all set to go now.  Let's move on to your app to configure it for deployment.
 
 Let's first configure your server file, which is usually named index.js or server.js.  The only thing that you need to have here is to set your port to **process.env.PORT**. 
@@ -50,25 +54,33 @@ So the start script is optional, but if you do not have one in your package.json
 </div>
 
 Once you have these two files setup, simply navigate to the root directory of your app and type in the terminal:
+
 {% highlight raw %}
 heroku create <name of your app>
 {% endhighlight raw %}
 
 This will create a remote to heroku's repository.  To check to see if the remote was successfully added, simply type in the command line:
+
 {% highlight html %}
 git remote -v
 {% endhighlight %}
 
-<div class="react-router">
-  <img class="image" src="../assets/images/react-router4.png" alt="nav bar">
-  <figcaption class="caption">Photo by Aralya Phinith</figcaption>
-</div>
+You should see **heroku master** as one of your remotes listed.  If the remote was successfully added, on the command line, enter: 
 
-And now finally we just need to render the routes:
+{% highlight html %}
+git push heroku master
+{% endhighlight %}
 
-<div class="react-router">
-  <img class="image" src="../assets/images/react-router5.png" alt="render routes">
-  <figcaption class="caption">Photo by Aralya Phinith</figcaption>
-</div>
+This will start the build onto heroku's repository.  Once the build is complete, simply enter on the command line:
 
-For the history, you can either go with browserHistory or hashHistory.  We decided to go with hashHistory as it allowed for us to use the forward and back buttons along with the refresh button when navigating through our app (browserHistory does not allow for this).  But feel free to experiment and see what better suits your app.  The rest of the setup is pretty straighforward, assign the path name accordingly and then set your components to the name of the parent components created earlier.  Voila - you've just set up your first react-router!
+{% highlight html %}
+heroku open
+{% endhighlight %}
+
+And voila, your app is now deployed.  In the case that you ran into an error and it wasn't deployed successfully, go back to your terminal and enter:
+
+{% highlight html %}
+heroku logs
+{% endhighlight %}
+
+This will give you the log of any and all errors that were encountered during your deployment.  This is where the true fun begins -- debugging!  I hope this was helpful and have fun out there folks!!!
