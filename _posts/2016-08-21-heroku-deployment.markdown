@@ -20,9 +20,9 @@ Have a node.js (javascript) app that needs deployment?  Well Heroku is here to d
 
 Once you have installed the toolbelt, open your terminal and type in 
 
-
+{% highlight html %}
 heroku
-
+{% endhighlight %}
 
 Dependencies for the toolbelt will begin to install.  Once that is complete, next type in your terminal
 
