@@ -2,7 +2,11 @@
 title: "Inspire!"
 layout: post
 date: 2016-04-30 22:10
-tag: jekyll
+tag: 
+- Front-end
+- Inspiration
+- HTTP
+- Heroku
 image: /assets/images/Inspire.png
 headerImage: false
 projects: true

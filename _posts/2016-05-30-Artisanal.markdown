@@ -2,7 +2,12 @@
 title: "Artisanal"
 layout: post
 date: 2016-05-30 22:10
-tag: jekyll
+tag: 
+- Full Stack
+- MongoDB
+- Express
+- Angular
+- Node
 image: /assets/images/Artisanal.png
 headerImage: false
 projects: true
