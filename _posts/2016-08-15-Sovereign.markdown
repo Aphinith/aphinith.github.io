@@ -1,7 +1,7 @@
 ---
 title: "Sovereign"
 layout: post
-date: 2016-06-30 22:10
+date: 2016-08-15 22:10
 tag: 
 - Full Stack
 - React
