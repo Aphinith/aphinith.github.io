@@ -13,8 +13,6 @@ author: aralyaphinith
 
 <div class="breaker"></div>
 
-## Inspire!
-
 <div class="bigger-image">
   <img class="image" src="../assets/images/Inspire.png" alt="Inspire">
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
