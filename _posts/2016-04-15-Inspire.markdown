@@ -1,0 +1,23 @@
+---
+title: "Inspire!"
+layout: post
+date: 2016-04-15 22:10
+tag: jekyll
+image: /assets/images/Inspire.png
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Looking for inspiration with one click of a button?"
+<!-- jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">' -->
+author: Aralya Phinith
+---
+
+<div class="breaker"></div>
+
+## Inspire!
+
+Looking for inspiration with a simple push of a button? [Check it out here](https://inspire989.herokuapp.com)! 
+
+This app makes api calls to get random quotes from the [theysaidso.com](https://theysaidso.com/api/) api. You can save some of your favorite quotes as well. Click [here](https://github.com/Aphinith/Inspire) to check out the repo.
+
+Tech stack used: Express, Angular, and Node
