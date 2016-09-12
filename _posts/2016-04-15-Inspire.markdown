@@ -18,6 +18,6 @@ author: aralyaphinith
 
 Looking for inspiration with a simple push of a button? [Check it out here](https://inspire989.herokuapp.com)! 
 
-This app makes api calls to get random quotes from the [theysaidso.com](https://theysaidso.com/api/) api. You can save some of your favorite quotes as well. Click [here](https://github.com/Aphinith/Inspire) to check out the repo.
+This app makes api calls to get random quotes from the [theysaidso.com](https://theysaidso.com/api/) api. You can save some of your favorite quotes as well. Click [here](https://github.com/Aphinith/Inspire) to check out the repo on my github.
 
 Tech stack used: Express, Angular, and Node
