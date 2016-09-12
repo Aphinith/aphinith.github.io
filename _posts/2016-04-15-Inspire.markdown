@@ -8,8 +8,7 @@ headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: Looking for inspiration with one click of a button?
-<!-- jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">' -->
-author: Aralya Phinith
+author: aralyaphinith
 ---
 
 <div class="breaker"></div>
