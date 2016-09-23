@@ -16,7 +16,9 @@ author: aralyaphinith
 ---
 
 <div class="bigger-image">
-  <img class="image" src="../assets/images/Inspire.png" alt="Inspire">
+  <a href="https://inspire989.herokuapp.com" target="_blank">
+    <img class="image" src="../assets/images/Inspire.png" alt="Inspire">
+  </a>
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 

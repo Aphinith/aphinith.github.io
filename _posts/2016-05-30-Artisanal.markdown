@@ -17,7 +17,9 @@ author: aralyaphinith
 ---
 
 <div class="bigger-image">
-  <img class="image" src="../assets/images/Artisanal.png" alt="Arisanal">
+  <a href="https://artisanal898.herokuapp.com" target="_blank">
+    <img class="image" src="../assets/images/Artisanal.png" alt="Arisanal">
+  </a>
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
