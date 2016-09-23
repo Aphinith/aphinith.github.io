@@ -20,10 +20,8 @@ author: aralyaphinith
   <figcaption class="caption">Photo by Aralya Phinith</figcaption>
 </div>
 
-Looking for inspiration with a simple push of a button? [Check it out here](https://inspire989.herokuapp.com)! 
+Looking for inspiration with a simple push of a button? <a href="https://inspire989.herokuapp.com" target="_blank">Check it out here</a>! 
 
-<a href="https://inspire989.herokuapp.com" target="_blank">Testing link</a>
-
-This app makes api calls to get random quotes from the [theysaidso.com](https://theysaidso.com/api/) api. You can save some of your favorite quotes as well. Click [here](https://github.com/Aphinith/Inspire) to check out the repo on my github.
+This app makes api calls to get random quotes from the <a href="https://theysaidso.com/api/" target="_blank">theysaidso.com</a> api. You can save some of your favorite quotes as well. Click <a href="https://github.com/Aphinith/Inspire" target="_blank">here</a> to check out the repo on my github.
 
 Tech stack used: Express, Angular, and Node
